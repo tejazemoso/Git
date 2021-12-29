@@ -6,14 +6,14 @@ import java.util.List;
 class College
 {
 	String name;
-	private List<Teacher> teacher;
-	public College(String name,List<Teacher> teacher){
+	private List<Teacher> teachers;
+	public College(String name,List<Teacher> teachers){
 		this.name=name;
-		this.teacher=teacher;
+		this.teachers=teachers;
 	}
 	public List<Teacher> getTeachers()
 	{
-		return teacher;
+		return teachers;
 	}
 }
 class Teacher{
@@ -42,3 +42,4 @@ public class AggregationDemo {
 	}
 
 }
+
