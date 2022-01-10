@@ -1,0 +1,9 @@
+//Before Rewriting the code using template literals
+const printBill = (name, bill) => {
+                     return “Hi “ + name + “, please pay: “ + bill;
+           }
+           
+           
+//After Rewriting the code using template literals
+const printBill = (name,bill) => {
+			return `Hi ${name} please pay: ${bill}`;
