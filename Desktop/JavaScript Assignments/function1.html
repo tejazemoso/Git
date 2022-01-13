@@ -1,0 +1,24 @@
+<!--Write a program to demonstrate how a function can be passed as a parameter to another function.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const pi=3.14;
+            area=function(){
+            r=prompt("Enter the radius of cone");
+            var a=pi*r*r;
+            return a;}
+            volume=function(area){
+                h=prompt("Enter the height of cone");
+                vol=area*h/3;
+                alert("Volume of the sphere is "+vol);
+            }
+        </script>
+
+    </head>
+    <body>
+        <h3>Volume of cone</h3>
+        <button onclick="volume(area())">Click me</button>
+
+    </body>
+</html>

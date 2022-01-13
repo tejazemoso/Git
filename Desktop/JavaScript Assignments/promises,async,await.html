@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promise/Async,await</title>
+    </head>
+    <body>
+        <h3>Fetching email....</h3>
+        <p></p>
+        <script>
+           function getData(uId) {
+                let email=uId+"@gmail.com";
+                let promise=new Promise((resolve,response) =>
+                setTimeout(()=>resolve(email) ,4000));
+                return promise;
+            }
+            async function fetchingData(){
+                console.log("start");
+                var email=await getData("skc");
+                let p=document.querySelector("p");
+                let body=document.querySelector("body");
+                let h3=document.querySelector("h3");
+                body.removeChild(h3);
+                p.textContent="Email fetched: "+email;
+                console.log("Email id of the user id is: " + email);
+                console.log("end");
+            }
+            fetchingData();
+        </script>
+    </body>
+</html>

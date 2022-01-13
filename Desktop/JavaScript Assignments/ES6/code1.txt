@@ -1,0 +1,8 @@
+//Before refactoring the code into one liner
+const printName = (name) => {
+                     return “Hi” + name;
+           }
+           
+
+//After refactoring the code into one liner
+const printName = name => "Hi " + name; 
